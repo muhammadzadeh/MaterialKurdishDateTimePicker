@@ -13,7 +13,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<com.mohamadamin.persianmaterialdatetimepicker.date.AccessibleDateAnimator
+<ir.muhammadzadeh.materialkurdishdatetimepicker.date.AccessibleDateAnimator
      xmlns:android="http://schemas.android.com/apk/res/android"
      android:id="@+id/animator"
      android:layout_width="@dimen/mdtp_date_picker_component_width"

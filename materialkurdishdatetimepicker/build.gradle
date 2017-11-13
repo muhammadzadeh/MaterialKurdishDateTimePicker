@@ -14,7 +14,7 @@ ext {
     siteUrl = 'https://github.com/muhammadzadeh/MaterialKurdishDateTimePicker'
     gitUrl = 'https://github.com/muhammadzadeh/MaterialKurdishDateTimePicker.git'
 
-    libraryVersion = '0.1.5'
+    libraryVersion = '0.1.6'
 
     developerId = 'muhammadzadeh'
     developerName = 'Emir Muhammadzadeh'
