@@ -12,7 +12,7 @@ You can report any issue on issues page. **Note: If you speak Kurdish, you can s
 Add MaterialKurdishDateTimePicker as a dependency to your `build.gradle` file:
 ```gradle
 dependencies {
-    compile 'compile 'ir.muhammadzadeh:materialkurdishdatetimepicker:0.1.5''
+    compile 'compile 'ir.muhammadzadeh:materialkurdishdatetimepicker:0.1.6''
 }
 ```
 
