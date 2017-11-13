@@ -3,12 +3,12 @@ An Android library containing a Kurdish date picker and a time picker designed o
 
 Date Picker | Time Picker
 ---- | ----
-![Date Picker](https://github.com/mohamad-amin/PersianMaterialDateTimePicker/raw/master/resources/datepicker.png) | ![Time Picker](https://github.com/mohamad-amin/PersianMaterialDateTimePicker/raw/master/resources/timepicker.png)
+![Date Picker](https://github.com/mohamad-amin/KurdishMaterialDateTimePicker/raw/master/resources/datepicker.png) | ![Time Picker](https://github.com/mohamad-amin/KurdishMaterialDateTimePicker/raw/master/resources/timepicker.png)
 
-You can report any issue on issues page. **Note: If you speak Persian, you can submit issues with Persian (Farsi) language and I will check them. :)**
+You can report any issue on issues page. **Note: If you speak Kurdish, you can submit issues with Kurdish (Farsi) language and I will check them. :)**
 
 #Importing
-Please refer to the [relative wiki page](https://github.com/mohamad-amin/PersianMaterialDateTimePicker/wiki/Importing-to-Android-Studio).
+Please refer to the [relative wiki page](https://github.com/mohamad-amin/KurdishMaterialDateTimePicker/wiki/Importing-to-Android-Studio).
 
 # Usage
 The library follows the same API as other pickers in the Android framework.
@@ -38,12 +38,12 @@ public void onDateSet(DatePickerDialog view, int year, int monthOfYear, int dayO
 ### Create a `TimePickerDialog`/`DatePickerDialog` using the supplied factory
 You will need to create a new instance of `TimePickerDialog` or `DatePickerDialog` using the static `newInstance()` method, supplying proper default values and a callback. Once the dialogs are configured, you can call `show()`.
 ```java
-PersianCalendar persianCalendar = new PersianCalendar();
+KurdishCalendar kurdishCalendar = new KurdishCalendar();
 DatePickerDialog datePickerDialog = DatePickerDialog.newInstance(
   MainActivity.this,
-  persianCalendar.getPersianYear(),
-  persianCalendar.getPersianMonth(),
-  persianCalendar.getPersianDay()
+  kurdishCalendar.getKurdishYear(),
+  kurdishCalendar.getKurdishMonth(),
+  kurdishCalendar.getKurdishDay()
 );
 datePickerDialog.show(getFragmentManager(), "Datepickerdialog");
 ```
@@ -71,11 +71,11 @@ datePickerDialog.setThemeDark(true);
 * `TimePickerDialog` `setTitle(String title)`
 Shows a title at the top of the `TimePickerDialog`
 
-* `setSelectableDays(PersianCalendar[] days)`
-You can pass a `PersianCalendar[]` to the `DatePickerDialog`. This values in this list are the only acceptable dates for the picker. It takes precedence over `setMinDate(PersianCalendar day)` and `setMaxDate(PersianCalendar day)`
+* `setSelectableDays(KurdishCalendar[] days)`
+You can pass a `KurdishCalendar[]` to the `DatePickerDialog`. This values in this list are the only acceptable dates for the picker. It takes precedence over `setMinDate(KurdishCalendar day)` and `setMaxDate(KurdishCalendar day)`
 
-* `setHighlightedDays(PersianCalendar[] days)`
-You can pass a `PersianCalendar[]` of days to highlight. They will be rendered in bold. You can tweak the color of the highlighted days by overwriting `mdtp_date_picker_text_highlighted`
+* `setHighlightedDays(KurdishCalendar[] days)`
+You can pass a `KurdishCalendar[]` of days to highlight. They will be rendered in bold. You can tweak the color of the highlighted days by overwriting `mdtp_date_picker_text_highlighted`
 
 * `OnDismissListener` and `OnCancelListener`  
 Both pickers can be passed a `DialogInterface.OnDismissLisener` or `DialogInterface.OnCancelListener` which allows you to run code when either of these events occur.
@@ -92,5 +92,5 @@ timePickerDialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
 Set whether the dialogs should vibrate the device when a selection is made. This defaults to `true`.
 
 #Credits 
-This libary is completely based on [MaterialDateTimePicker Library](https://github.com/wdullaer/MaterialDateTimePicker) and [Persian Calendar](http://sourceforge.net/projects/persiancalendar).
+This libary is completely based on  [PersianMaterialDateTimePicker](https://github.com/mohamad-amin/PersianMaterialDateTimePicker).
 
