@@ -5,7 +5,7 @@ Date Picker | Time Picker
 ---- | ----
 ![Date Picker](https://github.com/mohamad-amin/KurdishMaterialDateTimePicker/raw/master/resources/datepicker.png) | ![Time Picker](https://github.com/mohamad-amin/KurdishMaterialDateTimePicker/raw/master/resources/timepicker.png)
 
-You can report any issue on issues page. **Note: If you speak Kurdish, you can submit issues with Kurdish (Farsi) language and I will check them. :)**
+You can report any issue on issues page. **Note: If you speak Kurdish, you can submit issues with Kurdish language and I will check them. :)**
 
 #Importing
 
