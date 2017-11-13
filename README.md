@@ -8,7 +8,14 @@ Date Picker | Time Picker
 You can report any issue on issues page. **Note: If you speak Kurdish, you can submit issues with Kurdish (Farsi) language and I will check them. :)**
 
 #Importing
-Please refer to the [relative wiki page](https://github.com/mohamad-amin/KurdishMaterialDateTimePicker/wiki/Importing-to-Android-Studio).
+
+Add MaterialKurdishDateTimePicker as a dependency to your `build.gradle` file:
+```gradle
+dependencies {
+    compile 'compile 'ir.muhammadzadeh:materialkurdishdatetimepicker:0.1.5''
+}
+```
+
 
 # Usage
 The library follows the same API as other pickers in the Android framework.
