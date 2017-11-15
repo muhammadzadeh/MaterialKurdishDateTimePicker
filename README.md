@@ -3,7 +3,7 @@ An Android library containing a Kurdish date picker and a time picker designed o
 
 Date Picker | Time Picker
 ---- | ----
-![Date Picker](https://github.com/mohamad-amin/KurdishMaterialDateTimePicker/raw/master/resources/datepicker.png) | ![Time Picker](https://github.com/mohamad-amin/KurdishMaterialDateTimePicker/raw/master/resources/timepicker.png)
+![Date Picker](https://raw.githubusercontent.com/muhammadzadeh/MaterialKurdishDateTimePicker/master/resources/photo_2017-11-15_22-38-26.jpg) | ![Time Picker](https://raw.githubusercontent.com/muhammadzadeh/MaterialKurdishDateTimePicker/master/resources/photo_2017-11-15_22-38-21.jpg)
 
 You can report any issue on issues page. **Note: If you speak Kurdish, you can submit issues with Kurdish language and I will check them. :)**
 
@@ -12,7 +12,7 @@ You can report any issue on issues page. **Note: If you speak Kurdish, you can s
 Add MaterialKurdishDateTimePicker as a dependency to your `build.gradle` file:
 ```gradle
 dependencies {
-    compile 'compile 'ir.muhammadzadeh:materialkurdishdatetimepicker:0.1.6''
+    compile 'compile 'ir.muhammadzadeh:materialkurdishdatetimepicker:0.1.7''
 }
 ```
 
