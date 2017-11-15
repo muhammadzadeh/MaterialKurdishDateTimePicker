@@ -306,7 +306,7 @@ public abstract class MonthView extends View {
         mMonthDayLabelPaint.setAntiAlias(true);
         mMonthDayLabelPaint.setTextSize(MONTH_DAY_LABEL_TEXT_SIZE);
         mMonthDayLabelPaint.setColor(mMonthDayTextColor);
-        mMonthDayLabelPaint.setTypeface(TypefaceHelper.get(getContext(),"Roboto-Medium"));
+        mMonthDayLabelPaint.setTypeface(TypefaceHelper.get(getContext(),"irsans"));
         mMonthDayLabelPaint.setStyle(Style.FILL);
         mMonthDayLabelPaint.setTextAlign(Align.CENTER);
         mMonthDayLabelPaint.setFakeBoldText(true);
@@ -442,7 +442,7 @@ public abstract class MonthView extends View {
     private String getMonthAndYearString() {
         mStringBuilder.setLength(0);
         return LanguageUtils.getKurdishNumbers(
-                mKurdishCalendar.getKurdishMonthName()  + " " + mKurdishCalendar.getKurdishYear());
+                mKurdishCalendar.getKurdishMonthName()  + " " + mKurdishCalendar.getKurdishYear(true));
     }
 
     protected void drawMonthTitle(Canvas canvas) {

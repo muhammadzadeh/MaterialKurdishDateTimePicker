@@ -31,7 +31,7 @@ public class KurdishCalendarConstants {
 	/**
 	 * The JDN of 1 Farvardin 1; Equivalent to March 19, 622 A.D.
 	 */
-	public static final long PERSIAN_EPOCH = 1948321;
+	public static final long KURDISH_EPOCH = 1948321;
 
 	public static final String[] kurdishMonthNames = {
 			"خاکەلێوە",

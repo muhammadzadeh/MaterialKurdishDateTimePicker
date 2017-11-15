@@ -39,8 +39,11 @@ public class KurdishCalendarUtils {
 	 * @return long
 	 */
 	public static long kurdishToJulian(long year, int month, int day) {
-		return 365L * ((ceil(year - 474L, 2820D) + 474L) - 1L) + ((long) Math.floor((682L * (ceil(year - 474L, 2820D) + 474L) - 110L) / 2816D)) + (KurdishCalendarConstants.PERSIAN_EPOCH - 1L) + 1029983L
-				* ((long) Math.floor((year - 474L) / 2820D)) + (month < 7 ? 31 * month : 30 * month + 6) + day;
+		return 365L * ((ceil(year - 474L, 2820D) + 474L) - 1L) +
+				((long) Math.floor((682L * (ceil(year - 474L, 2820D) + 474L) - 110L) / 2816D)) +
+				(KurdishCalendarConstants.KURDISH_EPOCH - 1L) + 1029983L
+				* ((long) Math.floor((year - 474L) / 2820D)) +
+				(month < 7 ? 31 * month : 30 * month + 6) + day;
 	}
 
 	/**

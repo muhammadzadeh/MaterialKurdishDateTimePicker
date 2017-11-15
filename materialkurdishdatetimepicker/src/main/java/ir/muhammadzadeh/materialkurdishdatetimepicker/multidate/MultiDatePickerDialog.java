@@ -274,7 +274,7 @@ public class MultiDatePickerDialog extends DialogFragment implements
                 dismiss();
             }
         });
-        okButton.setTypeface(TypefaceHelper.get(activity, "Roboto-Medium"));
+        okButton.setTypeface(TypefaceHelper.get(activity, "irsans"));
 
         Button cancelButton = (Button) view.findViewById(R.id.cancel);
         cancelButton.setOnClickListener(new OnClickListener() {
@@ -284,7 +284,7 @@ public class MultiDatePickerDialog extends DialogFragment implements
                 getDialog().cancel();
             }
         });
-        cancelButton.setTypeface(TypefaceHelper.get(activity, "Roboto-Medium"));
+        cancelButton.setTypeface(TypefaceHelper.get(activity, "irsans"));
         cancelButton.setVisibility(isCancelable() ? View.VISIBLE : View.GONE);
 
         updateDisplay(false);
@@ -385,7 +385,7 @@ public class MultiDatePickerDialog extends DialogFragment implements
         mSelectedDayTextView.setText(LanguageUtils.
                 getKurdishNumbers(String.valueOf(target.getKurdishDay())));
         mYearView.setText(LanguageUtils.
-                getKurdishNumbers(String.valueOf(mSelectedYear)));
+                getKurdishNumbers(String.valueOf(target.getKurdishYear(true))));
 
         // Accessibility.
         long millis = target.getTimeInMillis();

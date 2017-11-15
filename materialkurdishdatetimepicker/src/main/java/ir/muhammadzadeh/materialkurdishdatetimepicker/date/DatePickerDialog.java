@@ -271,13 +271,13 @@ public class DatePickerDialog extends DialogFragment implements
             public void onClick(View v) {
                 tryVibrate();
                 if (mCallBack != null) {
-                    mCallBack.onDateSet(DatePickerDialog.this, mKurdishCalendar.getKurdishYear(),
+                    mCallBack.onDateSet(DatePickerDialog.this, mKurdishCalendar.getKurdishYear(true),
                             mKurdishCalendar.getKurdishMonth(), mKurdishCalendar.getKurdishDay());
                 }
                 dismiss();
             }
         });
-        okButton.setTypeface(TypefaceHelper.get(activity,"Roboto-Medium"));
+        okButton.setTypeface(TypefaceHelper.get(activity,"irsans"));
 
         Button cancelButton = (Button) view.findViewById(R.id.cancel);
         cancelButton.setOnClickListener(new OnClickListener() {
@@ -287,7 +287,7 @@ public class DatePickerDialog extends DialogFragment implements
                 getDialog().cancel();
             }
         });
-        cancelButton.setTypeface(TypefaceHelper.get(activity,"Roboto-Medium"));
+        cancelButton.setTypeface(TypefaceHelper.get(activity,"irsans"));
         cancelButton.setVisibility(isCancelable() ? View.VISIBLE : View.GONE);
 
         updateDisplay(false);
@@ -385,7 +385,7 @@ public class DatePickerDialog extends DialogFragment implements
         mSelectedDayTextView.setText(LanguageUtils.
                 getKurdishNumbers(String.valueOf(mKurdishCalendar.getKurdishDay())));
         mYearView.setText(LanguageUtils.
-                getKurdishNumbers(String.valueOf(mKurdishCalendar.getKurdishYear())));
+                getKurdishNumbers(String.valueOf(mKurdishCalendar.getKurdishYear(true))));
 
         // Accessibility.
         long millis = mKurdishCalendar.getTimeInMillis();

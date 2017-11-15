@@ -72,7 +72,7 @@ public class YearPickerView extends ListView implements OnItemClickListener, Mul
     private void init(Context context) {
         ArrayList<String> years = new ArrayList<>();
         for (int year = mController.getMinYear(); year <= mController.getMaxYear(); year++) {
-            years.add(String.format("%d", year));
+            years.add(String.format("%d", year+1321));
         }
         years = LanguageUtils.getKurdishNumbers(years);
         mAdapter = new YearAdapter(context, R.layout.mdtp_year_label_text_view, years);
@@ -99,7 +99,7 @@ public class YearPickerView extends ListView implements OnItemClickListener, Mul
     }
 
     private static int getYearFromTextView(TextView view) {
-        return Integer.valueOf(LanguageUtils.getLatinNumbers(view.getText().toString()));
+        return Integer.valueOf(LanguageUtils.getLatinNumbers(view.getText().toString()))-1321;
     }
 
     private class YearAdapter extends ArrayAdapter<String> {

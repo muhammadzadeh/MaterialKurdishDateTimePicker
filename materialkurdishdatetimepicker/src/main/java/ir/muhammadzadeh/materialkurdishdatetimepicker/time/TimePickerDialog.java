@@ -240,8 +240,8 @@ public class TimePickerDialog extends DialogFragment implements RadialPickerLayo
         mMinuteView.setOnKeyListener(keyboardListener);
         mAmPmTextView = (TextView) view.findViewById(R.id.ampm_label);
         mAmPmTextView.setOnKeyListener(keyboardListener);
-        mAmText = "قبل‌ازظهر";
-        mPmText = "بعدازظهر";
+        mAmText = "پێش نیوەرۆ";
+        mPmText = "دوا نیوەرۆ";
 
         mHapticFeedbackController = new HapticFeedbackController(getActivity());
 
@@ -291,7 +291,7 @@ public class TimePickerDialog extends DialogFragment implements RadialPickerLayo
             }
         });
         mOkButton.setOnKeyListener(keyboardListener);
-        mOkButton.setTypeface(TypefaceHelper.get(getDialog().getContext(),"Roboto-Medium"));
+        mOkButton.setTypeface(TypefaceHelper.get(getDialog().getContext(),"irsans"));
 
         Button mCancelButton = (Button) view.findViewById(R.id.cancel);
         mCancelButton.setOnClickListener(new OnClickListener() {
@@ -301,7 +301,7 @@ public class TimePickerDialog extends DialogFragment implements RadialPickerLayo
                 getDialog().cancel();
             }
         });
-        mCancelButton.setTypeface(TypefaceHelper.get(getDialog().getContext(),"Roboto-Medium"));
+        mCancelButton.setTypeface(TypefaceHelper.get(getDialog().getContext(),"irsans"));
         mCancelButton.setVisibility(isCancelable() ? View.VISIBLE : View.GONE);
 
         // Enable or disable the AM/PM view.
